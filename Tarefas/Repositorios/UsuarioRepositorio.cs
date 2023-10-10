@@ -18,7 +18,7 @@ namespace Tarefas.Repositorios
             return await _dbContext.Usuarios.FirstOrDefaultAsync(x => x.Id == id);
         }
 
-        public async Task<List<UsuarioModel>> BuuscarTodosUsuarios()
+        public async Task<List<UsuarioModel>> BuscarTodosUsuarios()
         {
             return await _dbContext.Usuarios.ToListAsync();
         }
